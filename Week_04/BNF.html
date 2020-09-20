@@ -1,0 +1,7 @@
+<BracktsExpression>::=<Number>|"("<AdditiveExpression>")"|
+    <MultiplicativeExpression>::=<Number>|
+        <MultiplicativeExpression>"*"<Number>|
+        <MultiplicativeExpression>"/"<Number>|
+        <AdditiveExpression>::=<MultiplicativeExpression>|
+            <AdditiveExpression>"+"<MultiplicativeExpression>|
+            <AdditiveExpression>"-"<MultiplicativeExpression>
